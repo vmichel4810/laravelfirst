@@ -27,7 +27,7 @@
                   <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">OtherLink</a>
+                    <a class="nav-link" href="/newpage">OtherLink</a>
                   </li>
               </ul>
             </div>
@@ -37,6 +37,8 @@
         @yield('content')
     </main>
 
-
+    <footer>
+        Vincent
+    </footer>
 </body>
 </html>

@@ -20,4 +20,8 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/newpage', function () {
+    return view('newpage');
+});
+
 
