@@ -1,0 +1,28 @@
+
+/* display: flex;
+justify-content: center;
+align-items: center; */
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+table
+{
+    margin: 50px auto;
+    border:black solid 2px;
+    background:#3b5567;
+    opacity: 0.8;
+    border-collapse: collapse;
+}
+th, td, tr
+{
+    border: black solid 2px;
+    color:black;
+}
+td, th
+{
+    text-align: center;
+    padding: 10px;
+}
+
+

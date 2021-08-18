@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\NavController;
+use App\Http\Controllers\BookController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [NavController::class, 'home']);
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/newpage', function () {
-    return view('newpage');
-});
+Route::get('/addbook', [NavController::class, 'addbook']);
+Route::post('/addBook', [BookController::class, 'store']);
+
+Route::get('/readbook', [NavController::class, 'readBook']);
+
+Route::get('/onebook/{id}', [NavController::class, 'oneBook']);
+
+Route::get('/updatebook', [Navcontroller::class, 'updatebook']);
+Route::post('/updatebook', [BookController::class, 'updatebook']);
+
+Route::post('/deleteBook', [BookController::class, 'delete']);
+
+
+Route::get('/contact', [NavController::class, 'contact']);
+
+
 
 

@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('title', 'contact')
-@section('css', 'contact')
+
 
 @section('content')
 <h1>contact</h1>
